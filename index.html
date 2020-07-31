@@ -3,128 +3,92 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="style" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <style>
-
             @font-face {
-                font-family: Raleway;
-                src: url(Raleway/Raleway-VariableFont_wght.ttf);
+                font-family: Railway;
+                src: url(static_files/font/Raleway/Raleway-VariableFont_wght.ttf);
             }
-
-                a:link {
-                    color: #606060;
-                    background-color: transparent;
-                    text-decoration: none;
-                }
-
-                a:visited {
-                color: #606060;
-                background-color: transparent;
-                text-decoration: none;
-                }
-
-                a:active {
-                color: gray;
-                background-color: transparent;
-                text-decoration: underline;
-                }
-            
             body{
-                margin: 0px;
-                padding:0px;
+                margin: 0;
+                padding: 0;
+                font-family: Railway;
+                color: gray;
             }
-
-            body img{
-                max-height: 100vh;
-                object-fit: cover;
+            a, a:hover, a:visited, a:active{
+                text-decoration: none;
+                color: gray;
             }
             .wrapper{
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .wrapper .left{
-                flex: 70%;
-            }
-            .wrapper .left img{
+                display: flexbox;
                 width: 100%;
-            }
-            .wrapper .right{
-                flex: 30%;
-                font-family: Raleway;
+                flex: 50%;
                 text-align: center;
             }
 
-            .wrapper .right .content{
-                margin-top: 15vh;
-                margin-bottom: 5vh;
+            .wrapper .title{
+                color: #707070;
+                margin-top: 25vh;
+                font-size: 6.5vh;
             }
 
-            .wrapper .right .title{
-                font-size: 7vh;
-                color: dimgrey;
-                text-align: center;
-            }
-
-            .wrapper .right .subtitle{
-                font-size: 2.3vh;
-                color: gray;
-                text-align: center;
-            }
-
-            .wrapper .right .links{
+            .wrapper .subtitle{
                 margin-top: 5vh;
-                text-align: center;
-                color: #606060;
-                word-spacing: 10px;
+                font-size: 2.5vh;
             }
 
-            .wrapper .right .links i:hover{
-                color: #000;
-            }
-
-            .wrapper .right .links i:visited{
-                color: black;
-            }
             .wrapper .nav{
-                padding: 5vh;
+                margin-top: 5vh;
             }
             .wrapper .nav a{
-                border: 2px solid #404040;
+                border-radius: 5px;
                 padding: 2vh;
                 word-spacing: 10px;       
                 }
             .wrapper .nav a:hover{
                 transition: 0.2s;
-                background-color: #404040;
+                background-color: gray;
                 color: #fff;
             }
+
+            .wrapper .links{
+                margin-top: 5vh;
+            }
+
+            .wrapper .links a{
+                
+                color: #606060;
+            }
+            .wrapper .links i{
+                letter-spacing: 1vh;
+                word-spacing: 10vh;
+            }
+
+            .wrapper .links a:hover{
+                transition: 0.5s;
+                color: black;
+            }
         </style>
-        <title>Aviral Tiwari</title>
+
     </head>
     <body>
-        <div class="content">
-            <div class="wrapper">
-                <div class="left">
-                    <img src="static_files/tracy-adams-TEemXOpR3cQ-unsplash.jpg">
-                </div>
-                <div class="right">
-                    <div class="content">
-                        <p class="title">Aviral Tiwari</p>
-                        <div class="subtitle">I am a Software Developer from India <div class="emoji">👋</div></p> </div>
-                        <div class="nav">
-                            <a>Resume</a>
-                            <a>Projects</a>
-                            <a>Skills</a>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/aviraltiwari"><i class="fa fa-github fa-2x"> </i></a>
-                            <a href="https://www.linkedin.com/in/aviraltiwarimgmt/"><i class="fa fa-linkedin fa-2x"> </i></a>
-                            <a href="https://twitter.com/aviraltiwariweb"><i class="fa fa-twitter fa-2x"> </i></a>
-                            <a href="mailto:aviraltiwarimgmt@gmail.com"><i class="fa fa-envelope-o fa-2x"> </i></a>
-                        </div>
-                    </div>
-                </div>
+        <div class="wrapper">
+            <div class="title">
+                Aviral Tiwari
+            </div>
+            <div class="subtitle">
+                I am a Software Developer from India <div>👋</div>
+            </div>
+            <div class="nav">
+                <a href="#">Resume</a>
+                <a href="#">Projects</a>
+                <a href="#">Skills</a>
+            </div>
+            <div class="links">
+                <a href="https://github.com/aviraltiwari"><i class="fa fa-github fa-2x"> </i></a>
+                <a href="https://www.linkedin.com/in/aviraltiwarimgmt/"><i class="fa fa-linkedin fa-2x"> </i></a>
+                <a href="https://twitter.com/aviraltiwariweb"><i class="fa fa-twitter fa-2x"> </i></a>
+                <a href="mailto:aviraltiwarimgmt@gmail.com"><i class="fa fa-envelope-o fa-2x"> </i></a>
             </div>
         </div>
     </body>
