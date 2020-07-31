@@ -34,18 +34,20 @@
                 margin: 0px;
                 padding:0px;
             }
+
+            body img{
+                max-height: 100vh;
+                object-fit: cover;
+            }
             .wrapper{
                 display: flex;
-                flex-wrap: wrap-reverse;
-                align-items: stretch;
+                flex-wrap: wrap;
             }
             .wrapper .left{
                 flex: 70%;
-                position: absolute;
             }
             .wrapper .left img{
                 width: 100%;
-                -moz-o-transform: scaleZ(100, 100, 100);
             }
             .wrapper .right{
                 flex: 30%;
@@ -54,22 +56,24 @@
             }
 
             .wrapper .right .content{
-                margin-top: 25vh;
+                margin-top: 15vh;
+                margin-bottom: 5vh;
             }
 
             .wrapper .right .title{
-                font-size: 4.5rem;
+                font-size: 7vh;
                 color: dimgrey;
                 text-align: center;
             }
 
             .wrapper .right .subtitle{
-                font-size: 1.5rem;
+                font-size: 2.3vh;
                 color: gray;
                 text-align: center;
             }
 
             .wrapper .right .links{
+                margin-top: 5vh;
                 text-align: center;
                 color: #606060;
                 word-spacing: 10px;
@@ -82,22 +86,43 @@
             .wrapper .right .links i:visited{
                 color: black;
             }
+            .wrapper .nav{
+                padding: 5vh;
+            }
+            .wrapper .nav a{
+                border: 2px solid #404040;
+                padding: 2vh;
+                word-spacing: 10px;       
+                }
+            .wrapper .nav a:hover{
+                transition: 0.2s;
+                background-color: #404040;
+                color: #fff;
+            }
         </style>
+        <title>Aviral Tiwari</title>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="left">
-                <!-- <img src="static_files/tracy-adams-TEemXOpR3cQ-unsplash.jpg" width="55%"> -->
-            </div>
-            <div class="right">
-                <div class="content">
-                    <p class="title">Aviral Tiwari</p>
-                    <div class="subtitle">I am a Software Developer from India <div class="emoji">👋</div></p> </div>
-                    <div class="links">
-                        <a href="https://github.com/aviraltiwari"><i class="fa fa-github fa-2x"> </i></a>
-                        <a href="https://www.linkedin.com/in/aviraltiwarimgmt/"><i class="fa fa-linkedin fa-2x"> </i></a>
-                        <a href="https://twitter.com/aviraltiwariweb"><i class="fa fa-twitter fa-2x"> </i></a>
-                        <a href="mailto:aviraltiwarimgmt@gmail.com"><i class="fa fa-envelope-o fa-2x"> </i></a>
+        <div class="content">
+            <div class="wrapper">
+                <div class="left">
+                    <img src="static_files/tracy-adams-TEemXOpR3cQ-unsplash.jpg">
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <p class="title">Aviral Tiwari</p>
+                        <div class="subtitle">I am a Software Developer from India <div class="emoji">👋</div></p> </div>
+                        <div class="nav">
+                            <a>Resume</a>
+                            <a>Projects</a>
+                            <a>Skills</a>
+                        </div>
+                        <div class="links">
+                            <a href="https://github.com/aviraltiwari"><i class="fa fa-github fa-2x"> </i></a>
+                            <a href="https://www.linkedin.com/in/aviraltiwarimgmt/"><i class="fa fa-linkedin fa-2x"> </i></a>
+                            <a href="https://twitter.com/aviraltiwariweb"><i class="fa fa-twitter fa-2x"> </i></a>
+                            <a href="mailto:aviraltiwarimgmt@gmail.com"><i class="fa fa-envelope-o fa-2x"> </i></a>
+                        </div>
                     </div>
                 </div>
             </div>
