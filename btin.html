@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+        @media only screen and (max-width: 500px){
+            .main{
+                max-height: 70vh;
+            }
+        }
+
+        body{
+            font-family: 'Fira Code', monospace;
+            background: #f9f9f9;
+        }
+        .main{
+            height: 100vh;
+        }
+        .jumbotron{
+            background: #f9f9f9;
+        }
+        .hero{
+            font-size: 20vw;
+        }
+        .hero-subtitle{
+            font-size: 3vh;
+        }
+        .navi{
+            margin: 3vh;
+            margin-right: 3vh;
+        }
+        li{
+            display: inline;
+        }
+        a{
+            color: #1f1f1f;
+        }
+        a:hover{
+            color: #2f3f3f;
+        }
+        .shortcut-links{
+            font-size: 1.7vh;
+        }
+        .coding-window{
+            background: black;
+            color: white;
+        }
+        .wave {
+            animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+            animation-duration: 2.5s;        /* Change to speed up or slow down */
+            animation-iteration-count: infinite;  /* Never stop waving :) */
+            transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+            display: inline-block;
+        }
+
+        @keyframes wave-animation {
+            0% { transform: rotate( 0.0deg) }
+            10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+            20% { transform: rotate(-8.0deg) }
+            30% { transform: rotate(14.0deg) }
+            40% { transform: rotate(-4.0deg) }
+            50% { transform: rotate(10.0deg) }
+            60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+            100% { transform: rotate( 0.0deg) }
+        }
+    </style>
+    <body>
+        <div class="main">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between navi">
+                <a class="navbar-brand" href="#">AVIRAL TIWARI</a>
+                    <li class="nav-item dropdown">
+                    <a class="btn-group nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <i class="fa fa-bars" aria-hidden="true">More</i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="static_files/resume.pdf">Resume</a>
+                        <a class="dropdown-item" href="#">Project</a>
+                        <a class="dropdown-item" href="#">Skills</a>
+                        <a class="dropdown-item" href="#">Activity</a>
+                    </div>
+                    </li>
+                </nav> 
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-2 text-center hero">Hello</h1>
+                    <p class="lead text-center hero-subtitle">I'm Aviral <span class="wave">👋</span> I code and design websites.</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="container">
+                <div class="d-flex flex-wrap   text-center shortcut-links">
+                    <div class="p-1 flex-fill">
+                        <h6> &#8212; Email</h6>
+                        <a href="mailto:aviraltiwarimgmt@gmail.com">aviraltiwarimgmt@gmail.com</a>
+                    </div>
+                    <div class="p-1 flex-fill">
+                        <h6> &#8212; Phone Number</h6>
+                        <a>+91-7007345240 (IN)</a>
+                    </div>
+                    <div class="p-1 flex-fill">
+                        <h6> &#8212; Address</h6>
+                        <a>Karol Bagh, Delhi India</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="coding-window">
+            <div class="container">
+            <h1 class="display-3"><a>- Web</a></h1>
+            </div>
+        </div>
+    </body>
+</html>
