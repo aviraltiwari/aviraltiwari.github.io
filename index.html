@@ -138,7 +138,7 @@
 
         :root {
   /* Change this to change the appearance of the hexaons */
-        --hex-width: 100px; 
+        --hex-width: 10vw; 
         --hex-between: 15px;
         
         /* Other hexagon dimentions */
@@ -172,24 +172,24 @@
         /* Hexagons */
         .hexagon-container {
             margin-top: 5%;
-        display: grid;
-        grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width);
-        grid-auto-rows: calc(var(--hex-width) - 28.87px/2);
-        grid-gap: var(--hex-between) var(--hex-between);
-        padding-bottom: var(--hex-border);
+            display: grid;
+            grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width);
+            grid-auto-rows: calc(var(--hex-width) - 28.87px/2);
+            grid-gap: var(--hex-between) var(--hex-between);
+            padding-bottom: var(--hex-border);
         }
         .hexagon {
-        align-items: center;
-        background-color: var(--color-hex-default);
-        cursor: pointer;
-        display: flex;
-        fill: white;
-        height: var(--hex-height);
-        justify-content: center;
-        margin: var(--hex-border) 0;
-        position: relative;
-        transition: var(--hex-transition);
-        width: var(--hex-width);
+            align-items: center;
+            background-color: var(--color-hex-default);
+            cursor: pointer;
+            display: flex;
+            fill: white;
+            height: var(--hex-height);
+            justify-content: center;
+            margin: var(--hex-border) 0;
+            position: relative;
+            transition: var(--hex-transition);
+            width: var(--hex-width);
         }
 
         .hexagon::after,
